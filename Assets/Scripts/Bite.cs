@@ -6,7 +6,7 @@ public class Bite : Item
 
     protected override void Activate()
     {
-        enemy.TakeDamage(value);
+        processor.Damage(value);
     }
 
 

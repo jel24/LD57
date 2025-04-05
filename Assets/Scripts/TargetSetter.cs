@@ -2,19 +2,18 @@ using UnityEngine;
 
 public class TargetSetter : MonoBehaviour
 {
-    public Entity ally;
-    public Entity enemy;
-
+    public DamageProcessor processor;
+    public BattleStats stats;
 
     void Start()
     {
-        Item[] items = GetComponentsInChildren<Item>();
-        foreach (Item i in items)
+        foreach (GameObject g in stats.items)
         {
-            i.ally = ally;
-            i.enemy = enemy;
+            Item newItem = Instantiate(g, transform).GetComponent<Item>();
+            newItem.processor = processor;
+            newItem.ApplyBonus();
         }
-    }
 
+    }
 
 }

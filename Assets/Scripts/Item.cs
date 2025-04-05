@@ -5,9 +5,12 @@ public class Item : MonoBehaviour
 
     public int cooldown;
     public int value;
+    public string description;
+    public Sprite sprite;
 
-    [HideInInspector] public Entity enemy;
-    [HideInInspector] public Entity ally;
+
+    [HideInInspector] public DamageProcessor processor;
+
 
 
     void Start()
@@ -16,6 +19,11 @@ public class Item : MonoBehaviour
     }
 
     protected virtual void Activate()
+    {
+
+    }
+
+    public virtual void ApplyBonus()
     {
 
     }

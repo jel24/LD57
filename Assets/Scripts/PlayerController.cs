@@ -6,8 +6,10 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
 
-    [SerializeField] Rigidbody2D rb;
-    [SerializeField] float speed;
+    public Rigidbody2D rb;
+    public float speed;
+    public PlayerPosition playerPos;
+
 
     bool canMove = true;
     public void ToggleMovement()
@@ -28,6 +30,7 @@ public class PlayerController : MonoBehaviour
         if (canMove)
         {
             rb.linearVelocity = movement;
+            playerPos.playerPosition = transform.position;
         } 
     }
 

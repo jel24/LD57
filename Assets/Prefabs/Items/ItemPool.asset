@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f3ba9b427be034b92f6c8f79d62057, type: 3}
-  m_Name: PlayerStats
+  m_Script: {fileID: 11500000, guid: a7490fddb9ce6874eb7d9db3c2a5b155, type: 3}
+  m_Name: ItemPool
   m_EditorClassIdentifier: 
-  items:
+  itemPrefabs:
   - {fileID: 203677033347611187, guid: b71cf117de20dfb418013333adb976e0, type: 3}
-  nametag: Batwise
-  maxHP: 50
-  defaultItem: {fileID: 203677033347611187, guid: b71cf117de20dfb418013333adb976e0, type: 3}
+  - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}

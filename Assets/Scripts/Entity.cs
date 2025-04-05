@@ -12,6 +12,7 @@ public class Entity : MonoBehaviour
     [HideInInspector] public int currentHP;
     [HideInInspector] public int maxHP;
 
+    bool isDead = false;
     void Start()
     {
         maxHP = stats.GetHP();
@@ -25,10 +26,11 @@ public class Entity : MonoBehaviour
         currentHP -= howMuch;
         GameObject damageText = Instantiate(textPrefab, transform.position, Quaternion.identity, transform);
         damageText.GetComponentInChildren<TextMeshProUGUI>().text = "-" + howMuch.ToString();
-        if (currentHP <= 0)
+        if (currentHP <= 0 && !isDead)
         {
             currentHP = 0;
             deathEvent.Trigger();
+            isDead = true;
         }
         takeDamageEvent.Trigger();
 

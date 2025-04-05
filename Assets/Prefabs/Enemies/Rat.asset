@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea528320f1999e84983c21cbb6e26911, type: 3}
   m_Name: Rat
   m_EditorClassIdentifier: 
+  items:
+  - {fileID: 203677033347611187, guid: b71cf117de20dfb418013333adb976e0, type: 3}
+  - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
   nametag: Rat
   maxHP: 25
