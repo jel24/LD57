@@ -2,11 +2,9 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class OverworldEnemy : MonoBehaviour
+public class OverworldChest : MonoBehaviour
 {
 
-    public EnemyStats whichEnemy;
-    public BattleSetupManager setupManager;
     public TriggeredEvent battleStartEvent;
 
 
@@ -14,9 +12,8 @@ public class OverworldEnemy : MonoBehaviour
     {
         if (collision.collider.gameObject.layer == 7)
         {
-            setupManager.whichEnemy = whichEnemy;
             battleStartEvent.Trigger();
-            SceneManager.LoadSceneAsync("BattleScene", LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync("Rewards", LoadSceneMode.Additive);
             Destroy(gameObject);
         }
 

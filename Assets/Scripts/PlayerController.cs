@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         if (canMove)
         {
             rb.linearVelocity = movement;
-            playerPos.playerPosition = transform.position;
+            if (playerPos) playerPos.playerPosition = transform.position;
         } 
     }
 
