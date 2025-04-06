@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu(fileName = "BattleStats", menuName = "Scriptable Objects/PlayerStats")]
 public class PlayerStats : BattleStats
 {
-    public string nametag = "Batwise";
+    public string nametag = "Batticus";
     public int maxHP;
     public int currentHP;
     public GameObject defaultItem;
@@ -15,7 +15,7 @@ public class PlayerStats : BattleStats
     {
         items = new List<GameObject>();
         AddItem(defaultItem);
-        SceneManager.LoadScene("World1");
+        SceneManager.LoadScene("Intro");
     }
 
     public override int GetHP()

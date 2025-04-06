@@ -8,7 +8,7 @@ public class ItemPool : ScriptableObject
 
     public GameObject GetRandomItem()
     {
-        return itemPrefabs[Random.Range(0, itemPrefabs.Length - 1)];
+        return itemPrefabs[Random.Range(0, itemPrefabs.Length)];
     }
 
 }

@@ -4,6 +4,7 @@ public class Patrol : MonoBehaviour
 {
     public Vector2 direction;
     public Rigidbody2D rb;
+    public SpriteRenderer sprite;
 
     float whichWay = 1f;
 
@@ -26,7 +27,7 @@ public class Patrol : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         whichWay *= -1f;
-        gameObject.transform.localScale = new Vector3(whichWay, 1f);
+        sprite.flipX = !sprite.flipX;
         rb.linearVelocity = direction * whichWay;
     }
 

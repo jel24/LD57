@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5718021583621517452}
   - component: {fileID: 8924962820266532709}
   - component: {fileID: 1998016136397103228}
+  - component: {fileID: 3468720681669350131}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -4978,3 +4979,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleStartEvent: {fileID: 11400000, guid: c4b7c36191ff7d34db1fd06fb776cb0c, type: 2}
+--- !u!95 &3468720681669350131
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910789095633125748}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 78f702a9b8a9fc64081ae45ee7c87c63, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

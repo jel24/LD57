@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: Snake
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 203677033347611187, guid: b71cf117de20dfb418013333adb976e0, type: 3}
-  - {fileID: 203677033347611187, guid: 5652ff9d20e4e604e9f1d6fd07484510, type: 3}
-  - {fileID: 203677033347611187, guid: 5652ff9d20e4e604e9f1d6fd07484510, type: 3}
-  - {fileID: 203677033347611187, guid: 5652ff9d20e4e604e9f1d6fd07484510, type: 3}
-  - {fileID: 203677033347611187, guid: 5652ff9d20e4e604e9f1d6fd07484510, type: 3}
-  - {fileID: 203677033347611187, guid: 5652ff9d20e4e604e9f1d6fd07484510, type: 3}
+  - {fileID: 203677033347611187, guid: 91ed03d33a4e1184e98f9dc31e1748df, type: 3}
   - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
   - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
   - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
   - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
   - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
-  sprite: {fileID: 21300000, guid: 34cf6e81c3ce72f499c8e36230e17295, type: 3}
+  - {fileID: 203677033347611187, guid: c2469184cafe5374c8028c4fef87a73d, type: 3}
+  - {fileID: 203677033347611187, guid: c2469184cafe5374c8028c4fef87a73d, type: 3}
+  - {fileID: 203677033347611187, guid: c2469184cafe5374c8028c4fef87a73d, type: 3}
+  - {fileID: 203677033347611187, guid: c2469184cafe5374c8028c4fef87a73d, type: 3}
+  - {fileID: 203677033347611187, guid: c2469184cafe5374c8028c4fef87a73d, type: 3}
+  sprite: {fileID: 21300000, guid: b79c607da432c6445bb51f2fcb5db350, type: 3}
   nametag: Snake
-  maxHP: 100
+  maxHP: 250

@@ -1,3 +1,5 @@
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TargetSetter : MonoBehaviour
@@ -13,7 +15,6 @@ public class TargetSetter : MonoBehaviour
             newItem.processor = processor;
             newItem.ApplyBonus();
         }
-
     }
 
 }

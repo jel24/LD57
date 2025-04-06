@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea528320f1999e84983c21cbb6e26911, type: 3}
+  m_Name: Skitter2
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 203677033347611187, guid: b71cf117de20dfb418013333adb976e0, type: 3}
+  - {fileID: 203677033347611187, guid: b71cf117de20dfb418013333adb976e0, type: 3}
+  - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
+  - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
+  - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
+  - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
+  - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
+  - {fileID: 203677033347611187, guid: 5652ff9d20e4e604e9f1d6fd07484510, type: 3}
+  - {fileID: 203677033347611187, guid: 5652ff9d20e4e604e9f1d6fd07484510, type: 3}
+  - {fileID: 203677033347611187, guid: 5652ff9d20e4e604e9f1d6fd07484510, type: 3}
+  - {fileID: 203677033347611187, guid: 5652ff9d20e4e604e9f1d6fd07484510, type: 3}
+  sprite: {fileID: 21300000, guid: 34cf6e81c3ce72f499c8e36230e17295, type: 3}
+  nametag: Skitter
+  maxHP: 180

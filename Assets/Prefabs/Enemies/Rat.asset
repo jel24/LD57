@@ -16,4 +16,4 @@ MonoBehaviour:
   - {fileID: 203677033347611187, guid: 6fd4e3481469a084bb485ee6bc68cd93, type: 3}
   sprite: {fileID: 21300000, guid: 64cd7aa94e5fec34cb019598b65f2f54, type: 3}
   nametag: Rat
-  maxHP: 20
+  maxHP: 30

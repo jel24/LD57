@@ -8,7 +8,7 @@ public class PickupItem : MonoBehaviour
     public PlayerStats playerStats;
     public TextMeshPro nametag;
     public TextMeshPro description;
-
+    public SpriteRenderer sprite;
 
     GameObject whichItem;
 
@@ -20,7 +20,7 @@ public class PickupItem : MonoBehaviour
         whichItem = items.GetRandomItem();
         nametag.text = whichItem.GetComponent<Item>().nametag;
         description.text = whichItem.GetComponent<Item>().description;
-
+        sprite.sprite = whichItem.GetComponent<Item>().sprite;
     }
 
 

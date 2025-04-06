@@ -15,7 +15,7 @@ MonoBehaviour:
   items:
   - {fileID: 203677033347611187, guid: b71cf117de20dfb418013333adb976e0, type: 3}
   sprite: {fileID: 21300000, guid: 242cfa3cbd5fc53459b8f46dcb03261a, type: 3}
-  nametag: Batwise
+  nametag: Batticus
   maxHP: 50
   currentHP: 0
   defaultItem: {fileID: 203677033347611187, guid: b71cf117de20dfb418013333adb976e0, type: 3}

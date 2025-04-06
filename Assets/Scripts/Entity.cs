@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Entity : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class Entity : MonoBehaviour
     public TriggeredEvent takeDamageEvent;
     public GameObject damageTextPrefab;
     public GameObject healTextPrefab;
-    public SpriteRenderer sprite;
+    public Image sprite;
 
     [HideInInspector] public BattleStats stats;
     [HideInInspector] public int currentHP;
@@ -19,7 +20,7 @@ public class Entity : MonoBehaviour
         maxHP = stats.GetHP();
         currentHP = maxHP;
         takeDamageEvent.Trigger();
-        if (stats.sprite) sprite.sprite = stats.sprite;
+        sprite.sprite = stats.sprite;
     }
 
     public void TakeDamage(int howMuch)
@@ -43,6 +44,7 @@ public class Entity : MonoBehaviour
         if (currentHP > maxHP) currentHP = maxHP;
         GameObject healText = Instantiate(healTextPrefab, transform.position, Quaternion.identity, transform);
         healText.GetComponentInChildren<TextMeshProUGUI>().text = "+" + howMuch.ToString();
+        takeDamageEvent.Trigger();
 
     }
 
