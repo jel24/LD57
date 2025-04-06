@@ -5,7 +5,8 @@ public class Entity : MonoBehaviour
 {
     public TriggeredEvent deathEvent;
     public TriggeredEvent takeDamageEvent;
-    public GameObject textPrefab;
+    public GameObject damageTextPrefab;
+    public GameObject healTextPrefab;
 
 
     [HideInInspector] public BattleStats stats;
@@ -24,7 +25,7 @@ public class Entity : MonoBehaviour
     public void TakeDamage(int howMuch)
     {
         currentHP -= howMuch;
-        GameObject damageText = Instantiate(textPrefab, transform.position, Quaternion.identity, transform);
+        GameObject damageText = Instantiate(damageTextPrefab, transform.position, Quaternion.identity, transform);
         damageText.GetComponentInChildren<TextMeshProUGUI>().text = "-" + howMuch.ToString();
         if (currentHP <= 0 && !isDead)
         {
@@ -33,6 +34,15 @@ public class Entity : MonoBehaviour
             isDead = true;
         }
         takeDamageEvent.Trigger();
+
+    }
+
+    public void Heal(int howMuch)
+    {
+        currentHP += howMuch;
+        if (currentHP > maxHP) currentHP = maxHP;
+        GameObject healText = Instantiate(healTextPrefab, transform.position, Quaternion.identity, transform);
+        healText.GetComponentInChildren<TextMeshProUGUI>().text = "+" + howMuch.ToString();
 
     }
 

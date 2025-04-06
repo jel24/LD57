@@ -91,8 +91,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 3
   value: 5
-  enemy: {fileID: 0}
-  ally: {fileID: 0}
+  nametag: Bite
+  description: 5dmg / 3s
+  sprite: {fileID: 0}
+  processor: {fileID: 0}
 --- !u!1 &3799868101075408956
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea528320f1999e84983c21cbb6e26911, type: 3}
+  m_Name: Skitter
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 203677033347611187, guid: 6fd4e3481469a084bb485ee6bc68cd93, type: 3}
+  - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
+  - {fileID: 203677033347611187, guid: ff7ad3f6c0961a148b5d4f16a3cf2510, type: 3}
+  nametag: Skitter
+  maxHP: 75

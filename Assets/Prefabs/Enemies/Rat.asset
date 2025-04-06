@@ -16,4 +16,4 @@ MonoBehaviour:
   - {fileID: 203677033347611187, guid: b71cf117de20dfb418013333adb976e0, type: 3}
   - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
   nametag: Rat
-  maxHP: 25
+  maxHP: 20

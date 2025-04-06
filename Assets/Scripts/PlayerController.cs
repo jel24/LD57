@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public float speed;
     public PlayerPosition playerPos;
-
+    public PlayerStats stats;
 
     bool canMove = true;
     public void ToggleMovement()

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DamageProcessor : MonoBehaviour
@@ -9,7 +10,7 @@ public class DamageProcessor : MonoBehaviour
 
     [HideInInspector] public int critChance = 0;
     [HideInInspector] public int damageBonus = 0;
-
+    [HideInInspector] public int vampiric = 0;
 
     public void Damage(int howMuch)
     {
@@ -19,12 +20,16 @@ public class DamageProcessor : MonoBehaviour
         {
             damage *= 2;
         }
-
+        if (vampiric > 0)
+        {
+            Heal(Mathf.FloorToInt(damage * (vampiric * 1f) / 100f));
+        }
         enemy.TakeDamage(damage);
     }
 
     public void Heal(int howMuch)
     {
-        
+        if (howMuch < 1) return;
+        ally.Heal(howMuch);
     }
 }

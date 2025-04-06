@@ -177,8 +177,8 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 25}
+  m_CellSize: {x: 50, y: 50}
+  m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &18284730
@@ -211,6 +211,7 @@ MonoBehaviour:
   ally: {fileID: 866108912}
   critChance: 0
   damageBonus: 0
+  vampiric: 0
 --- !u!1 &181940110
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,7 +952,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEvent: {fileID: 11400000, guid: d11e1e4bc713c074baeb31ddf061cb78, type: 2}
   takeDamageEvent: {fileID: 11400000, guid: daa57f98e7f27e74d854a9f18113e5ee, type: 2}
-  textPrefab: {fileID: 6181231935220258439, guid: 4c74d7b436dbf564abc69f5d5a279d6e, type: 3}
+  damageTextPrefab: {fileID: 6181231935220258439, guid: 4c74d7b436dbf564abc69f5d5a279d6e, type: 3}
+  healTextPrefab: {fileID: 6181231935220258439, guid: 40edac24708f41144863ee65ed0a1882, type: 3}
   stats: {fileID: 11400000, guid: 252e6695cab58714aab566ec9f577b57, type: 2}
   currentHP: 0
   maxHP: 0
@@ -1047,7 +1049,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEvent: {fileID: 11400000, guid: d11e1e4bc713c074baeb31ddf061cb78, type: 2}
   takeDamageEvent: {fileID: 11400000, guid: dbb1690d4f013ae46b1b21eb54f93460, type: 2}
-  textPrefab: {fileID: 6181231935220258439, guid: 4c74d7b436dbf564abc69f5d5a279d6e, type: 3}
+  damageTextPrefab: {fileID: 6181231935220258439, guid: 4c74d7b436dbf564abc69f5d5a279d6e, type: 3}
+  healTextPrefab: {fileID: 6181231935220258439, guid: 40edac24708f41144863ee65ed0a1882, type: 3}
   stats: {fileID: 11400000, guid: bea421fd424087f4ea8d2280c7e10ee6, type: 2}
   currentHP: 0
   maxHP: 0
@@ -1517,8 +1520,8 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 25}
+  m_CellSize: {x: 50, y: 50}
+  m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &1574436619
@@ -1551,6 +1554,7 @@ MonoBehaviour:
   ally: {fileID: 897580192}
   critChance: 0
   damageBonus: 0
+  vampiric: 0
 --- !u!1 &1932516582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,7 +1610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

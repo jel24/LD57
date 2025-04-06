@@ -5,6 +5,7 @@ public class Item : MonoBehaviour
 
     public int cooldown;
     public int value;
+    public string nametag;
     public string description;
     public Sprite sprite;
 
@@ -15,7 +16,7 @@ public class Item : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("Activate", cooldown, cooldown);
+        InvokeRepeating("Activate", cooldown + Random.Range(-.25f, .25f), cooldown);
     }
 
     protected virtual void Activate()

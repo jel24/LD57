@@ -1,18 +1,21 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(fileName = "BattleStats", menuName = "Scriptable Objects/PlayerStats")]
 public class PlayerStats : BattleStats
 {
     public string nametag = "Batwise";
     public int maxHP;
+    public int currentHP;
     public GameObject defaultItem;
 
     public void NewGame()
     {
         items = new List<GameObject>();
         AddItem(defaultItem);
+        SceneManager.LoadScene("World1");
     }
 
     public override int GetHP()

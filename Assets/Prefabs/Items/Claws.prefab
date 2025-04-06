@@ -90,8 +90,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 0
-  value: 0
-  description: 
+  value: 1
+  nametag: Claws
+  description: All attacks +1dmg
   sprite: {fileID: 0}
   processor: {fileID: 0}
 --- !u!1 &3799868101075408956
