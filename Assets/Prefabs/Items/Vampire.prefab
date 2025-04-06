@@ -90,9 +90,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 0
-  value: 10
+  value: 15
   nametag: Vampire
-  description: 10% lifesteal
+  description: 15% lifesteal
   sprite: {fileID: 0}
   processor: {fileID: 0}
 --- !u!1 &3799868101075408956

@@ -954,6 +954,7 @@ MonoBehaviour:
   takeDamageEvent: {fileID: 11400000, guid: daa57f98e7f27e74d854a9f18113e5ee, type: 2}
   damageTextPrefab: {fileID: 6181231935220258439, guid: 4c74d7b436dbf564abc69f5d5a279d6e, type: 3}
   healTextPrefab: {fileID: 6181231935220258439, guid: 40edac24708f41144863ee65ed0a1882, type: 3}
+  sprite: {fileID: 0}
   stats: {fileID: 11400000, guid: 252e6695cab58714aab566ec9f577b57, type: 2}
   currentHP: 0
   maxHP: 0
@@ -1047,10 +1048,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c2b95436a89a243ace54160581410e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathEvent: {fileID: 11400000, guid: d11e1e4bc713c074baeb31ddf061cb78, type: 2}
+  deathEvent: {fileID: 11400000, guid: 37ae1695223ef134eb8e89cab6b0675c, type: 2}
   takeDamageEvent: {fileID: 11400000, guid: dbb1690d4f013ae46b1b21eb54f93460, type: 2}
   damageTextPrefab: {fileID: 6181231935220258439, guid: 4c74d7b436dbf564abc69f5d5a279d6e, type: 3}
   healTextPrefab: {fileID: 6181231935220258439, guid: 40edac24708f41144863ee65ed0a1882, type: 3}
+  sprite: {fileID: 0}
   stats: {fileID: 11400000, guid: bea421fd424087f4ea8d2280c7e10ee6, type: 2}
   currentHP: 0
   maxHP: 0
@@ -1216,6 +1218,7 @@ GameObject:
   - component: {fileID: 1244911636}
   - component: {fileID: 1244911635}
   - component: {fileID: 1244911634}
+  - component: {fileID: 1244911637}
   m_Layer: 0
   m_Name: BattleManager
   m_TagString: Untagged
@@ -1282,6 +1285,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1244911637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244911633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fba49d3c8766294bb9f605e9f8e7bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whatHappens:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1244911635}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: GameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  whichEvent: {fileID: 11400000, guid: 37ae1695223ef134eb8e89cab6b0675c, type: 2}
 --- !u!1 &1545967523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,6 +1666,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932516582}
   m_CullTransparentMesh: 1
+--- !u!1 &2132358158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2132358160}
+  - component: {fileID: 2132358159}
+  m_Layer: 0
+  m_Name: StallManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2132358159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132358158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e1a8a359ae7ef468e8dcc374f0636a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ally: {fileID: 897580192}
+  enemy: {fileID: 866108912}
+--- !u!4 &2132358160
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132358158}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1642,3 +1719,4 @@ SceneRoots:
   - {fileID: 204193577}
   - {fileID: 788755770}
   - {fileID: 1244911636}
+  - {fileID: 2132358160}

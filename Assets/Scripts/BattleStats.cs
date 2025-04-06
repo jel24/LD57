@@ -3,7 +3,7 @@ using UnityEngine;
 public class BattleStats : ScriptableObject
 {
     public List<GameObject> items;
-
+    public Sprite sprite;
 
     public virtual int GetHP()
     {

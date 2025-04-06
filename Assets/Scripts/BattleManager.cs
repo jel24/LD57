@@ -22,5 +22,8 @@ public class BattleManager : MonoBehaviour
         SceneManager.UnloadSceneAsync("BattleScene");
     }
 
-
+    public void GameOver()
+    {
+        SceneManager.LoadSceneAsync("GameOver");
+    }
 }

@@ -9,11 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea528320f1999e84983c21cbb6e26911, type: 3}
-  m_Name: Rat
+  m_Script: {fileID: 11500000, guid: f397742ad36b4fe4a9b6b4eef9004ba8, type: 3}
+  m_Name: PotionEvent
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 203677033347611187, guid: 6fd4e3481469a084bb485ee6bc68cd93, type: 3}
-  sprite: {fileID: 21300000, guid: 64cd7aa94e5fec34cb019598b65f2f54, type: 3}
-  nametag: Rat
-  maxHP: 20

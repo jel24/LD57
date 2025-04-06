@@ -89,10 +89,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c050a0e817ea4394c80e23d7f44d2131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 3
-  value: 5
+  cooldown: 2
+  value: 3
   nametag: Bite
-  description: 5dmg / 3s
+  description: 3dmg / 2s
   sprite: {fileID: 0}
   processor: {fileID: 0}
 --- !u!1 &3799868101075408956

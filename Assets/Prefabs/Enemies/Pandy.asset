@@ -16,5 +16,6 @@ MonoBehaviour:
   - {fileID: 203677033347611187, guid: 6fd4e3481469a084bb485ee6bc68cd93, type: 3}
   - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
   - {fileID: 203677033347611187, guid: 5778b9f022f7c754191d054ba659cee6, type: 3}
+  sprite: {fileID: 21300000, guid: 0a3a8cc91eff73a4abb512c7ce38fe0d, type: 3}
   nametag: Pandora
   maxHP: 500
