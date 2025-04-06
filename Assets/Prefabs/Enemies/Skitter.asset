@@ -17,4 +17,4 @@ MonoBehaviour:
   - {fileID: 203677033347611187, guid: b71cf117de20dfb418013333adb976e0, type: 3}
   sprite: {fileID: 21300000, guid: 34cf6e81c3ce72f499c8e36230e17295, type: 3}
   nametag: Skitter
-  maxHP: 55
+  maxHP: 65

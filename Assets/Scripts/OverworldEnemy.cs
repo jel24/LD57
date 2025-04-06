@@ -8,7 +8,7 @@ public class OverworldEnemy : MonoBehaviour
     public EnemyStats whichEnemy;
     public BattleSetupManager setupManager;
     public TriggeredEvent battleStartEvent;
-
+    public TriggeredEvent musicStartEvent;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -16,6 +16,7 @@ public class OverworldEnemy : MonoBehaviour
         {
             setupManager.whichEnemy = whichEnemy;
             battleStartEvent.Trigger();
+            musicStartEvent.Trigger();
             SceneManager.LoadSceneAsync("BattleScene", LoadSceneMode.Additive);
             Destroy(gameObject);
         }

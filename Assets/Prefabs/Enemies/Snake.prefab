@@ -4999,6 +4999,7 @@ MonoBehaviour:
   whichEnemy: {fileID: 11400000, guid: d4a9d9763d813eb42a77eaa8ff8eb27c, type: 2}
   setupManager: {fileID: 11400000, guid: 29148d67ea38a734cba1609c5ed6b69e, type: 2}
   battleStartEvent: {fileID: 11400000, guid: c4b7c36191ff7d34db1fd06fb776cb0c, type: 2}
+  musicStartEvent: {fileID: 11400000, guid: 9831859153f2dce4fbdefac0bebe0858, type: 2}
 --- !u!114 &1108530651812918585
 MonoBehaviour:
   m_ObjectHideFlags: 0

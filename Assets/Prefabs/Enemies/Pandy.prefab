@@ -178,3 +178,4 @@ MonoBehaviour:
   whichEnemy: {fileID: 11400000, guid: b082474041c4050489f1524d1b823552, type: 2}
   setupManager: {fileID: 11400000, guid: 29148d67ea38a734cba1609c5ed6b69e, type: 2}
   battleStartEvent: {fileID: 11400000, guid: c4b7c36191ff7d34db1fd06fb776cb0c, type: 2}
+  musicStartEvent: {fileID: 11400000, guid: 9831859153f2dce4fbdefac0bebe0858, type: 2}
